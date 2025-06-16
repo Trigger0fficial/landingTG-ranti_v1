@@ -1,0 +1,89 @@
+{% extends 'server/technical/pattern.html' %}
+{% load static %}
+{% block title %}{{ data.title }}{% endblock %}
+{% block content %}
+   <main>
+      <!-- breadcrumb area start -->
+      <div class="breadcrumb__area breadcrumb-height p-relative grey-bg"
+         data-background="assets/img/breadcrumb/breadcrumb.jpg">
+         <div class="breadcrumb__scroll-bottom smooth">
+            <a href="#price">
+               <i class="far fa-arrow-down"></i>
+            </a>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-xxl-12">
+                  <div class="breadcrumb__content text-center">
+                     <h3 class="breadcrumb__title">Тарифный план</h3>
+                     <div class="breadcrumb__list">
+                        <span><a href="{% url 'index' %}">На главную</a></span>
+                        <span class="dvdr"><i class="fa fa-angle-right"></i></span>
+                        <span>Прайс</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- breadcrumb area end -->
+
+      <!-- tp-price-area-start -->
+      <div id="price" class="tp-price__area tp-price__border pt-120 pb-90 ">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-lg-6 col-10">
+                  <div class="tp-price__section text-center pb-60 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
+                     <h3 class="tp-section-title-sm pb-20">Все тарифы</h3>
+                     <span>Ежемесячная стоимость подписки на тг бот составляет 1000 р</span>
+                  </div>
+               </div>
+            </div>
+            <div class="row g-0 align-items-end align-items-lg-center">
+              <div class="row g-0 align-items-end align-items-lg-center">
+               {% for el in price %}
+                  {% if el.is_done %}
+                     <div class="col-xl-4 col-lg-4 col-md-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
+                  <div class="tp-price__item tp-price__active z-index">
+                     <div class="tp-price__icon d-flex justify-content-between align-items-center">
+                        <span class="icon price-color-2"><i class="fas fa-badge-check"></i></span>
+                        <span>{{ el.name }}</span>
+                     </div>
+                     <h3 class="tp-price__title">{{ el.price }}₽</h3>
+                     <div class="tp-price__list">
+                        <ul>
+                          {{ el.dsc }}
+                        </ul>
+                     </div>
+                     <div class="tp-price__btn">
+                        <a class="tp-btn-border" href="#"><span>Приобрести</span></a>
+                     </div>
+                  </div>
+               </div>
+                  {% else %}
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".5s">
+                  <div class="tp-price__item">
+                     <div class="tp-price__icon d-flex justify-content-between align-items-center">
+                        <span class="icon price-color-1"><i class="fas fa-star"></i></span>
+                        <span>{{ el.name }}</span>
+                     </div>
+                     <h3 class="tp-price__title">{{ el.price }}₽</h3>
+                     <div class="tp-price__list">
+                        <ul>
+                           {{ el.dsc }}
+                        </ul>
+                     </div>
+                     <div class="tp-price__btn">
+                        <a class="tp-btn-border" href="#"><span>Приобрести</span></a>
+                     </div>
+                  </div>
+               </div>
+               {% endif %}
+               {% endfor %}
+            </div>
+            </div>
+         </div>
+      </div>
+      <!-- tp-price-area-end -->
+   </main>
+{% endblock %}

@@ -1,0 +1,121 @@
+{% extends 'server/technical/pattern.html' %}
+{% load static %}
+{% block title %}{{ data.title }}{% endblock %}
+{% block content %}
+   <main>
+      <!-- breadcrumb area start -->
+      <div class="breadcrumb__area breadcrumb-height p-relative grey-bg"
+         data-background="assets/img/breadcrumb/breadcrumb.jpg">
+         <div class="breadcrumb__scroll-bottom smooth">
+            <a href="#contact">
+               <i class="far fa-arrow-down"></i>
+            </a>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-xxl-12">
+                  <div class="breadcrumb__content text-center">
+                     <h3 class="breadcrumb__title">О нас</h3>
+                     <div class="breadcrumb__list">
+                        <span><a href="#">На главную</a></span>
+                        <span class="dvdr"><i class="fa fa-angle-right"></i></span>
+                        <span>Контактная информация</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- breadcrumb area end -->
+
+      <!-- contact area start -->
+      <div class="tp-conatact-area pt-125 pb-125">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
+                  <div class="contact-info text-center">
+                     <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                     <h4>Юридический адрес</h4>
+                     <span>
+                        <a href="#" target="_blank">346428, Ростовская обл., г. Новочеркасск, ул. Просвещения, 132</a>
+                     </span>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
+                  <div class="contact-info text-center">
+                     <span class="contact-icon"><i class="fas fa-phone-volume"></i></span>
+                     <h4>Контактный телефон</h4>
+                     <span>
+                        <a href="tel:1255568652">+7(928)-131-82-33</a>
+                     </span>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
+                  <div class="contact-info text-center">
+                     <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                     <h4>Электронная почта</h4>
+                     <a href="mailto:clevermaks@yandex.ru">clevermaks@yandex.ru</a></span>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-12">
+                  <div id="contact" class="contact-form-box pt-60">
+                     <div class="contact-form-box text-center">
+                        <div class="row justify-content-center">
+                           <div class="col-8">
+                              <h4 class="contact-title">Свяжитесь с нами :</h4>
+                           </div>
+                        </div>
+                        <form method="post" action="">
+                           {% csrf_token %}
+                           <div class="row">
+                              <div class="col-lg-6 col-md-6 col-12">
+                                 <div class="tp-contact-input">
+                                    {{ form.name_user }}
+                                    {% if form.name_user.errors %}
+                                        <div class="text-danger">{{ form.name_user.errors.0 }}</div>
+                                    {% endif %}
+                                 </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-12">
+                                 <div class="tp-contact-input">
+                                    {{ form.email }}
+                                    {% if form.email.errors %}
+                                        <div class="text-danger">{{ form.email.errors.0 }}</div>
+                                    {% endif %}
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="tp-contact-input">
+                                    {{ form.ask }}
+                                    {% if form.ask.errors %}
+                                        <div class="text-danger">{{ form.ask.errors.0 }}</div>
+                                    {% endif %}
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-12">
+                                 <div class="tp-submit-button">
+                                    <button type="submit" class="tp-btn-blue-square"><span>Отправить</span></button>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+
+                        {% if success %}
+                            <div class="alert alert-success mt-3">Ваше сообщение успешно отправлено!</div>
+                        {% endif %}
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- contact area end -->
+
+
+   </main>
+
+{% endblock %}
