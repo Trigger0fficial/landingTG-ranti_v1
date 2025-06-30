@@ -5,30 +5,23 @@
 <main>
 
       <!-- tp-slider-area-start -->
-      <div class="tp-hero__area pt-100 pb-80 p-relative">
-         <div class="tp-hero__shape-3-1 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
-            <img src="{% static 'server/assets/img/hero/hero-shape-3-3.png' %}" alt="">
-         </div>
-         <div class="tp-hero__shape-3-2 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
-            <img src="{% static 'server/assets/img/hero/hero-shape-3-4.png' %}" alt="">
-         </div>
          <div class="container">
             <div class="row align-items-start">
                <div class="col-xl-6 col-lg-6">
                   <div class="tp-hero__content-box">
-                     <h3 class="tp-hero__title-lg pb-20 theme-color wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">Заголовок 3-5 слов
+                     <h3 class="tp-hero__title-lg pb-20 theme-color wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">UNIBOT®️RANTI
                      </h3>
-                     <p class="wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">Анонс до 20 слов Анонс до 20 слов Анонс до 20 слов Анонс до 20 слов Анонс до 20 слов Анонс до 20 слов Анонс до 20 слов Анонс до 20 слов</p>
+                     <p class="wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">Система рекрутинга, введения бизнеса, участия в масштабных мероприятий.<br>Мы собрали для тебя все современные технологии в одному телеграмм боте. Среди них находится использование искусственные языковые модели, генерация картинок и аудио под различные задачи! Так же тебя ждут ежемесячные конкурсы/задач. Ну и конечно интересные группы, в рамках которых будет реализовываться общение, профессиональные мероприятия.</p>
                   </div>
                   <div class="tp-hero__button-box wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
-                     <a class="tp-btn-blue-square mb-20 mr-25" href="contact.html"><span>Попробовать сейчас</span></a>
-                     <a class="tp-btn-pink mb-20" href="about-us.html"><span>Узнать больше</span></a>
+                     <a class="tp-btn-blue-square mb-20 mr-25" href="#"><span>Подписка 1 000 ₽/мес</span></a>
+                     <a class="tp-btn-pink mb-20" href="{% url 'faq' %}"><span>Частые вопросы</span></a>
                   </div>
                </div>
                <div class="col-xl-6 col-lg-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".9s">
                   <div class="tp-hero__wrapper-3 d-flex justify-content-center justify-content-lg-end">
                      <div class="tp-hero__thumb-3">
-                        <img src="{% static 'server/assets/img/hero/hero-3.jpg' %}" alt="">
+                        <img src="{% static 'server/assets/img/hero/hero-3.png' %}" alt="">
                         <div class="tp-hero__thumb-shape-1">
                            <img src="{% static 'server/assets/img/hero/hero-shape-3-1.png' %}" alt="">
                         </div>
@@ -44,254 +37,60 @@
       <!-- tp-slider-area-end -->
 
 
-      <!-- tp-service-area-start -->
-      <div class="tp-service__area tp-service__space theme-bg-3 pt-120 pb-100">
-         <div class="container">
-            <div class="row">
-               <div class="col-12">
-                  <div class="tp-service__section-wrapper d-flex justify-content-between">
-                     <div class="tp-service__title-box ml-40">
-                        <h3 class="tp-service__title wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">Заголовок слайда с преимуществами (до 5 слов)
-                        </h3>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="tp-service__slider-wrapper">
-               <div class="tp-service__slider-active">
-                  <div class="tp-service__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
-                     <div class="tp-service__icon">
-                        <img src="{% static 'server/assets/img/service/service-icon-1.png' %}" alt="">
-                     </div> 
-                     <div class="tp-service__content">
-                        <h4 class="tp-service__title-sm"><a href="">Преимущество 1</a></h4>
-                        <p>Описание преимущества 1</p>
-                     </div>
-                     <div class="tp-service__link">
-                        <a href="">
-                           <svg width="39" height="16" viewBox="0 0 39 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M38.7071 8.70711C39.0976 8.31658 39.0976 7.68342 38.7071 7.29289L32.3431 0.928932C31.9526 0.538408 31.3195 0.538408 30.9289 0.928932C30.5384 1.31946 30.5384 1.95262 30.9289 2.34315L36.5858 8L30.9289 13.6569C30.5384 14.0474 30.5384 14.6805 30.9289 15.0711C31.3195 15.4616 31.9526 15.4616 32.3431 15.0711L38.7071 8.70711ZM0 9H38V7H0V9Z" fill="currentColor"/>
-                           </svg>
-                        </a>
-                     </div> 
-                  </div>
-                  <div class="tp-service__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
-                     <div class="tp-service__icon">
-                        <img src="{% static 'server/assets/img/service/service-icon-2.png' %}" alt="">
-                     </div> 
-                     <div class="tp-service__content">
-                        <h4 class="tp-service__title-sm"><a href="">Преимущество 2</a></h4>
-                        <p>Описание преимущества 2</p>
-                     </div>
-                     <div class="tp-service__link">
-                        <a href="">
-                           <svg width="39" height="16" viewBox="0 0 39 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M38.7071 8.70711C39.0976 8.31658 39.0976 7.68342 38.7071 7.29289L32.3431 0.928932C31.9526 0.538408 31.3195 0.538408 30.9289 0.928932C30.5384 1.31946 30.5384 1.95262 30.9289 2.34315L36.5858 8L30.9289 13.6569C30.5384 14.0474 30.5384 14.6805 30.9289 15.0711C31.3195 15.4616 31.9526 15.4616 32.3431 15.0711L38.7071 8.70711ZM0 9H38V7H0V9Z" fill="currentColor"/>
-                           </svg>
-                        </a>
-                     </div> 
-                  </div>
-                  <div class="tp-service__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
-                     <div class="tp-service__icon">
-                        <img src="{% static 'server/assets/img/service/service-icon-3.png' %}" alt="">
-                     </div> 
-                     <div class="tp-service__content">
-                        <h4 class="tp-service__title-sm"><a href="">Преимущество 3</a></h4>
-                        <p>Описание преимущества 3</p>
-                     </div>
-                     <div class="tp-service__link">
-                        <a href="">
-                           <svg width="39" height="16" viewBox="0 0 39 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M38.7071 8.70711C39.0976 8.31658 39.0976 7.68342 38.7071 7.29289L32.3431 0.928932C31.9526 0.538408 31.3195 0.538408 30.9289 0.928932C30.5384 1.31946 30.5384 1.95262 30.9289 2.34315L36.5858 8L30.9289 13.6569C30.5384 14.0474 30.5384 14.6805 30.9289 15.0711C31.3195 15.4616 31.9526 15.4616 32.3431 15.0711L38.7071 8.70711ZM0 9H38V7H0V9Z" fill="currentColor"/>
-                           </svg>
-                        </a>
-                     </div> 
-                  </div>
-                  <div class="tp-service__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1s">
-                     <div class="tp-service__icon">
-                        <img src="{% static 'server/assets/img/service/service-icon-2.png' %}" alt="">
-                     </div> 
-                     <div class="tp-service__content">
-                        <h4 class="tp-service__title-sm"><a href="">Преимущество 4</a></h4>
-                        <p>Описание преимущества 4</p>
-                     </div>
-                     <div class="tp-service__link">
-                        <a href="">
-                           <svg width="39" height="16" viewBox="0 0 39 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M38.7071 8.70711C39.0976 8.31658 39.0976 7.68342 38.7071 7.29289L32.3431 0.928932C31.9526 0.538408 31.3195 0.538408 30.9289 0.928932C30.5384 1.31946 30.5384 1.95262 30.9289 2.34315L36.5858 8L30.9289 13.6569C30.5384 14.0474 30.5384 14.6805 30.9289 15.0711C31.3195 15.4616 31.9526 15.4616 32.3431 15.0711L38.7071 8.70711ZM0 9H38V7H0V9Z" fill="currentColor"/>
-                           </svg>
-                        </a>
-                     </div> 
-                  </div>
-                  <div class="tp-service__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.2s">
-                     <div class="tp-service__icon">
-                        <img src="{% static 'server/assets/img/service/service-icon-1.png' %}" alt="">
-                     </div> 
-                     <div class="tp-service__content">
-                        <h4 class="tp-service__title-sm"><a href="">Преимущество 5</a></h4>
-                        <p>Описание преимущества 5</p>
-                     </div>
-                     <div class="tp-service__link">
-                        <a href="">
-                           <svg width="39" height="16" viewBox="0 0 39 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M38.7071 8.70711C39.0976 8.31658 39.0976 7.68342 38.7071 7.29289L32.3431 0.928932C31.9526 0.538408 31.3195 0.538408 30.9289 0.928932C30.5384 1.31946 30.5384 1.95262 30.9289 2.34315L36.5858 8L30.9289 13.6569C30.5384 14.0474 30.5384 14.6805 30.9289 15.0711C31.3195 15.4616 31.9526 15.4616 32.3431 15.0711L38.7071 8.70711ZM0 9H38V7H0V9Z" fill="currentColor"/>
-                           </svg>
-                        </a>
-                     </div> 
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- tp-service-area-end -->
-
-
-      <!-- tp-counter-area-start -->
-      <div class="tp-counter-2__area tp-counter-2__space theme-bg-3 pb-100">
-         <div class="container">
-            <div class="tp-counter-2__wrapper pt-65">
-               <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
-                     <div class="tp-counter-2__item d-flex align-items-center justify-content-sm-start justify-content-center">
-                        <div class="tp-counter-2__icon">
-                           <img src="{% static 'server/assets/img/counter/counter-1.png' %}" alt="">
-                        </div>
-                        <div class="tp-counter-2__content">
-                           <h4><span class="counter">20</span>+</h4>
-                           <span>Числовое преимущество 1 </span>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-3 col-md-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
-                     <div class="tp-counter-2__item d-flex align-items-center justify-content-sm-start justify-content-center">
-                        <div class="tp-counter-2__icon">
-                           <img src="{% static 'server/assets/img/counter/counter-2.png' %}" alt="">
-                        </div>
-                        <div class="tp-counter-2__content">
-                           <h4 class="counter">1200</h4>
-                           <span>Числовое преимущество 2 </span>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-3 col-md-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
-                     <div class="tp-counter-2__item d-flex align-items-center justify-content-sm-start justify-content-center">
-                        <div class="tp-counter-2__icon">
-                           <img src="{% static 'server/assets/img/counter/counter-3.png' %}" alt="">
-                        </div>
-                        <div class="tp-counter-2__content">
-                           <h4 class="counter">280</h4>
-                           <span>Числовое преимущество 3 </span>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-3 col-md-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
-                     <div class="tp-counter-2__item d-flex align-items-center justify-content-sm-start justify-content-center">
-                        <div class="tp-counter-2__icon">
-                           <img src="{% static 'server/assets/img/counter/counter-4.png' %}" alt="">
-                        </div>
-                        <div class="tp-counter-2__content">
-                           <h4 class="counter">260</h4>
-                           <span>Числовое преимущество 4 </span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- tp-counter-area-end -->
-
-
       <!-- tp-about-area-start -->
-      <div class="tp-about__area pt-120 pb-120 p-relative">
-         <div class="tp-about__shape-3-1">
-            <img src="{% static 'server/assets/img/hero/hero-shape-3-5.png' %}" alt="">
-         </div>
-         <div class="tp-about__shape-3-2">
-            <img src="{% static 'server/assets/img/hero/hero-shape-3-6.png' %}" alt="">
-         </div>
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".5s">
-                  <div class="tp-about__thumb-wrapper p-relative">
-                     <div class="tp-about__shape-1">
-                        <img src="{% static 'server/assets/img/hero/hero-shape-3-1.png' %}" alt="">
-                     </div>
-                     <div class="tp-about__shape-2">
-                        <img src="{% static 'server/assets/img/hero/hero-shape-3-2.png' %}" alt="">
-                     </div>
-                     <div class="tp-about__thumb">
-                        <img src="{% static 'server/assets/img/hero/hero-4.jpg' %}" alt="">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-6 col-lg-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".7s">
-                  <div class="tp-about__section-box">
-                     <h3 class="tp-section-title-md pb-30">Второй заголовок <br>до 5 слов</h3>
-                     <div class="tp-about__text">
-                        <p>Анонс второго заголовка до 30 слов Анонс второго заголовка до 30 слов Анонс второго заголовка до 30 слов Анонс второго заголовка до 30 слов Анонс второго заголовка до 30 слов Анонс второго заголовка до 30 слов Анонс второго заголовка до 30 слов Анонс второго заголовка до 30 слов</p>
-                     </div>
-                     <a class="tp-btn-blue-square" href="contact.html"><span>Перейти в ТГ бот</span></a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-          <!-- tp-price-area-start -->
-      <div id="price" class="tp-price__area grey-bg pt-120 pb-90 ">
+      <div id="about-inner__area" class="about-inner__area pt-130 pb-130">
          <div class="container">
             <div class="row justify-content-center">
-               <div class="col-lg-6 col-10">
-                  <div class="tp-price__section text-center pb-60 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
-                     <h3 class="tp-section-title-sm pb-20">Тарифы</h3>
-                     <span>Ежемесячная стоимость подписки на тг бот составляет 1000 р</span>
+               <div class="col-lg-9 col-md-12">
+                  <div class="about-inner__section-box mb-70 text-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
+                     <span class="about-inner__subtitle">Предложение для вас</span>
+                     <h3 class="tp-section-title-md">Забери бесплатный период использования продукта</h3>
                   </div>
                </div>
             </div>
-            <div class="row g-0 align-items-end align-items-lg-center">
-               {% for el in price %}
-                  {% if el.is_done %}
-                     <div class="col-xl-4 col-lg-4 col-md-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
-                  <div class="tp-price__item tp-price__active z-index">
-                     <div class="tp-price__icon d-flex justify-content-between align-items-center">
-                        <span class="icon price-color-2"><i class="fas fa-badge-check"></i></span>
-                        <span>{{ el.name }}</span>
-                     </div>
-                     <h3 class="tp-price__title">{{ el.price }}₽</h3>
-                     <div class="tp-price__list">
-                        <ul>
-                          {{ el.dsc }}
-                        </ul>
-                     </div>
-                     <div class="tp-price__btn">
-                        <a class="tp-btn-border" href="#"><span>Приобрести</span></a>
-                     </div>
-                  </div>
-               </div>
-                  {% else %}
-                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".5s">
-                  <div class="tp-price__item">
-                     <div class="tp-price__icon d-flex justify-content-between align-items-center">
-                        <span class="icon price-color-1"><i class="fas fa-star"></i></span>
-                        <span>{{ el.name }}</span>
-                     </div>
-                     <h3 class="tp-price__title">{{ el.price }}₽</h3>
-                     <div class="tp-price__list">
-                        <ul>
-                           {{ el.dsc }}
-                        </ul>
-                     </div>
-                     <div class="tp-price__btn">
-                        <a class="tp-btn-border" href="#"><span>Приобрести</span></a>
+            <div class="row g-0">
+               <div class="col-xl-7 col-lg-7">
+                  <div class="about-inner__wrapper wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".5s">
+                     <div class="row gx-10">
+                        <div class="col-xl-6 col-lg-6 col-md-6 mb-20">
+                           <div class="about-inner__thumb w-img">
+                              <img src="{% static 'server/assets/img/about/ab-inner-1.png' %}" alt="">
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                           <div class="about-inner__content-item mb-10  d-flex align-items-center">
+                              <span>14</span>
+                              <p>Дней пробного периода</p>
+                           </div>
+                           <div class="about-inner__thumb-2 w-img mb-20">
+                              <img src="{% static 'server/assets/img/about/ab-inner-2.png' %}" alt="">
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
-               {% endif %}
-               {% endfor %}
+               <div class="col-xl-5 col-lg-5 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".7s">
+                  <div class="about-inner__right">
+                     <div class="about-inner__content">
+                        <p>Продукт "чат-бот" предназначен для создания продающего контента, используя возможности Искусственного Интеллекта, он помогает в продвижении товаров и услуг, улучшая маркетинговые стратегии и взаимодействие с клиентами</p>
+                        <p>В бесплатный переиод входит использования минимального тарифа в течении 14 дней!</p>
+                     </div>
+                     <div class="about-inner__list">
+                        <ul>
+                           <li><i class="far fa-check"></i>Языковые модели</li>
+                           <li><i class="far fa-check"></i>Игровые движки</li>
+                           <li><i class="far fa-check"></i> Ежемесячные события</li>
+                           <li><i class="far fa-check"></i>Система рекрутинга, введения бизнеса</li>
+                        </ul>
+                     </div>
+                     <div class="about-inner__btn d-flex align-items-center">
+                        <a class="tp-btn-blue-square mr-20" href="#"><span>Попробовать бесплатно</span></a>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
-      <!-- tp-price-area-end -->
 
       <!-- tp-testimonial-area-start -->
       <div class="tp-testimonial__area grey-bg pt-110 pb-120 fix">
@@ -310,9 +109,6 @@
                      <div class="tp-testimonial__slider-content">
                         <p>{{ el.dsc }}</p>
                         <h4 class="tp-testimonial__slider-title">- {{ el.user }}</h4>
-                     </div>
-                     <div class="tp-testimonial__slider-img">
-                        <img src="{% static 'server/assets/img/testimonial/testi-slide-1.jpg' %}" alt="">
                      </div>
                      <div class="tp-testimonial__slider-quote">
                         <i class="fas fa-quote-left"></i>
@@ -349,8 +145,8 @@
                         <img src="assets/img/cta/cta-shape-5.png" alt="">
                      </div>
                      <div class="tp-cta__item text-center">
-                        <h3 class="tp-section-title text-white pb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">Заголовок <br> до 5 слов</h3>
-                        <a class="tp-btn-sky wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s" href="contact.html"><span>Начать пользоваться прямо сейчас</span></a>
+                        <h3 class="tp-section-title text-white pb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">Приобрети ежемесячную подписку<br>прямо сейчас </h3>
+                        <a class="tp-btn-sky wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s" href="contact.html"><span>Начать пользоваться за 1 000 ₽</span></a>
                      </div>
                   </div>
                </div>

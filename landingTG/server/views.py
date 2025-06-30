@@ -2,6 +2,9 @@ from django.shortcuts import render
 
 from server.models import *
 
+def show_main(req):
+    return render(req, 'server/index-main.html')
+
 
 def show_index(req):
     price = Price.objects.all()

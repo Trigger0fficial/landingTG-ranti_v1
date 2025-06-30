@@ -1,0 +1,183 @@
+{% extends 'server/technical/pattern.html' %}
+{% load static %}
+{% block title %}{{ data.title }}{% endblock %}
+{% block content %}
+   <main>
+      <div id="cookieModal" class="modal">
+    <div class="modal-content">
+        <p>На сайте используются файлы cookie и осуществляется их обработка для улучшения пользовательского опыта. Продолжая использовать сайт, вы соглашаетесь с этим.</p>
+        <button onclick="closeModal()">Понятно</button>
+    </div>
+</div>
+      <!-- tp-slider-area-start -->
+      <div class="tp-hero__area tp-hero__bg p-relative" data-background="{% static 'server/assets/img/hero/hero-bg.png' %}">
+         <div class="scroll-down smooth d-none d-xl-block">
+            <a href="#feature-area">
+               <div class="scroll-dots d-flex justify-content-center flex-column align-items-center">
+                  <span class="rotate-text">Подробная информация</span>
+                  <span class="circle-1"></span>
+                  <span class="circle-2"></span>
+                  <span class="circle-3"></span>
+                  <button class="scroll-mouse"><i class="fal fa-mouse"></i></button>
+               </div>
+            </a>
+         </div>
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-xl-8 col-12">
+                  <div class="tp-hero__wrapper">
+                     <div class="tp-hero__content pb-70 text-center">
+                        <h2 class="tp-hero__title wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".5s">АИС СОКОЛ ✨</h2><h3>Интеллект в алгоритмах - успех в проектах</h3>
+                     </div>
+                     <div class="tp-hero__thumb text-xl-block text-lg-center  p-relative">
+                        <img class="wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".7s" src="{% static 'server/assets/img/hero/99.png' %}" alt="">
+                        <div class="tp-hero__thumb-icon">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- tp-slider-area-end -->
+      <!-- tp-feature-area-start -->
+      <div id="feature-area" class="tp-feature__area pt-60 pb-100">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="tp-feature__section-box text-center mb-70">
+                        <h3 class="tp-section-title wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".3s">Что умеет "АИС Сокол" 🔥</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-6 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".5s">
+                  <div class="tp-feature__item mb-30 text-center">
+                     <div class="tp-feature__icon">
+                        <img src="{% static 'server/assets/img/feature/fea-1.png' %}" alt="">
+                     </div>
+                     <div class="tp-feature__content">
+                        <h4 class="tp-feature__title-sm">Доработка и поддержка существующих решений</h4>
+                        <p>Любая технология. Любая архитектура. Любой стек.
+Не важно, на чём и когда была написана ваша система — мы берёмся за работу с любыми технологиями (50+). Поможем улучшить производительность, оптимизировать архитектуру, устранить технический долг или полностью переписать продукт по современным стандартам.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-6 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".7s">
+                  <div class="tp-feature__item mb-30 text-center">
+                     <div class="tp-feature__icon">
+                        <img src="{% static 'server/assets/img/feature/fea-2.png' %}" alt="">
+                     </div>
+                     <div class="tp-feature__content">
+                        <h4 class="tp-feature__title-sm">Web-системы под ключ</h4>
+                        <p>От идеи до внедрения — полный цикл разработки.
+Если у вас есть бизнес-идея, прототип или даже просто мысль «было бы здорово», — мы берём на себя весь цикл реализации: от аналитики и проектирования до запуска, поддержки и масштабирования продукта. Работаем прозрачно и поэтапно.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-6 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
+                  <div class="tp-feature__item mb-30 text-center">
+                     <div class="tp-feature__icon">
+                        <img src="{% static 'server/assets/img/feature/fea-3.png' %}" alt="">
+                     </div>
+                     <div class="tp-feature__content">
+                        <h4 class="tp-feature__title-sm">Разработка внутренних продуктов</h4>
+                        <p>Мы не просто делаем проекты на заказ — мы создаём собственные продукты, которые успешно проходят путь от MVP до SaaS-сервиса. Некоторые из них уже приносят стабильный доход. Посмотреть кейсы можно у нас на сайте.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- tp-feature-area-end -->
+
+
+      <!-- tp-appliction-area-start -->
+      <div class="tp-app__area theme-bg pt-120 pb-120">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".7s" data-wow-delay=".5s">
+                  <div class="tp-app__thumb">
+                     <img src="{% static 'server/assets/img/app/app_1.png' %}" alt="">
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6 wow tpfadeRight" data-wow-duration=".7s" data-wow-delay=".7s">
+                  <div class="tp-app__wrapper">
+                     <div class="tp-app__content">
+                        <h3 class="tp-section-title text-white mb-30">Почему выбирают нас?
+                        </h3>
+                        <p>Не просто подрядчики — технологические партнёры.
+Мы глубоко погружаемся в бизнес-процессы клиентов и предлагаем не только реализацию, но и стратегические подходы. Работаем быстро, гибко и нацелены на результат. От стартов без ТЗ — до масштабных корпоративных платформ.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- tp-appliction-area-end -->
+
+
+      <!-- tp-faq-area-end -->
+      <div class="tp-faq__area grey-bg">
+         <div class="container">
+            <div class="row align-items-end">
+               <div class="col-xl-6 col-lg-6">
+                  <div class="tp-faq__wrapper-box">
+                     <div class="tp-faq__title-box">
+                        <h3 class="tp-section-title wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".3s">Нас часто спрашивают...</h3>
+                     </div>
+                     <div class="tp-custom-accordio">
+                        <div class="accordion" id="accordionExample">
+                           <div class="accordion-items wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".7s">
+                              <h2 class="accordion-header" id="headingOne">
+                                 <button class="accordion-buttons " type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Что если мой проект был начат другой командой, и теперь всё в хаосе?
+                                 </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show"
+                                 aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                 <div class="accordion-body">
+                                    Это частый кейс. Мы умеем разбираться в чужом коде, даже если он не документирован. Проведём аудит, дадим оценку состояния и предложим варианты: оптимизация, рефакторинг или поэтапная миграция без риска остановки бизнеса.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="accordion-items wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
+                              <h2 class="accordion-header" id="headingTwo">
+                                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Чем ваши внутренние продукты могут быть полезны бизнесу?
+                                 </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                 data-bs-parent="#accordionExample">
+                                 <div class="accordion-body">
+                                    Наши внутренние продукты — это решения, созданные из реального опыта и под реальные задачи. Они уже доказали свою эффективность. В зависимости от задачи, вы можете получить готовое SaaS-решение, экономя на разработке и времени выхода на рынок.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="accordion-items wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="1s">
+                              <h2 class="accordion-header" id="headingThree">
+                                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Можете ли вы помочь с запуском SaaS, если у меня только идея и нет команды?
+                                 </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                 data-bs-parent="#accordionExample">
+                                 <div class="accordion-body">
+                                    Да, именно такие задачи мы любим. Мы соберём команду под ваш проект, поможем сформулировать требования, сделать прототип, MVP и довести продукт до запуска и первых клиентов. У нас есть опыт выведения SaaS на рынок под ключ.
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- tp-faq-area-end -->
+   </main>
+
+{% endblock %}
