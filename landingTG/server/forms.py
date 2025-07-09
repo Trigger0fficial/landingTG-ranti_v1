@@ -7,15 +7,15 @@ class SendMessageForm(forms.ModelForm):
         fields = ['name_user', 'email', 'ask']
         widgets = {
             'name_user': forms.TextInput(attrs={
-                'placeholder': 'Ваше имя',
+                'placeholder': 'Имя',
                 'class': 'form-control'
             }),
             'email': forms.EmailInput(attrs={
-                'placeholder': 'Ваша электронная почта',
+                'placeholder': 'Электронная почта',
                 'class': 'form-control'
             }),
             'ask': forms.Textarea(attrs={
-                'placeholder': 'Напишите ваш вопрос',
+                'placeholder': 'Напишите вопрос',
                 'class': 'form-control',
                 'rows': 4
             }),

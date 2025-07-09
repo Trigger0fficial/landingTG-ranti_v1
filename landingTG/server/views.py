@@ -11,10 +11,22 @@ def show_index(req):
     reviews = Reviews.objects.all()
     faq = Faq.objects.all()
 
+    success = False
+    if req.method == 'POST':
+        form = SendMessageForm(req.POST)
+        if form.is_valid():
+            form.save()
+            success = True
+            form = SendMessageForm()  # Очистить форму после отправки
+    else:
+        form = SendMessageForm()
+
     data = {
         'price': price,
         'reviews': reviews[:7],
-        'faq': faq[:5]
+        'faq': faq[:5],
+        'form': form,
+        'success': success
     }
 
     return render(req, 'server/index.html', data)

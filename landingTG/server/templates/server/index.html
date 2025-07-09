@@ -11,11 +11,11 @@
                   <div class="tp-hero__content-box">
                      <h3 class="tp-hero__title-lg pb-20 theme-color wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">UNIBOT®️RANTI
                      </h3>
-                     <p class="wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">Система рекрутинга, введения бизнеса, участия в масштабных мероприятий.<br>Мы собрали для тебя все современные технологии в одному телеграмм боте. Среди них находится использование искусственные языковые модели, генерация картинок и аудио под различные задачи! Так же тебя ждут ежемесячные конкурсы/задач. Ну и конечно интересные группы, в рамках которых будет реализовываться общение, профессиональные мероприятия.</p>
+                     <p class="wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">Добро пожаловать в интеллектуальную платформу нового поколения<br>Пространство, где рекрутинг, развитие бизнеса и участие в профессиональных мероприятиях объединяются в одном удобном Telegram-боте. Мы собрали для тебя передовые технологии: от использования искусственных языковых моделей до генерации изображений и аудио, адаптированных под реальные задачи. Здесь ты сможешь не только автоматизировать процессы, но и принять участие в регулярных конкурсах и челленджах, которые помогут прокачать навыки и выйти на новый уровень. А активные сообщества внутри платформы станут местом для общения, обмена опытом и вовлечения в профессиональную среду. Всё это — в одном решении, всегда под рукой.</p>
                   </div>
                   <div class="tp-hero__button-box wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
                      <a class="tp-btn-blue-square mb-20 mr-25" href="#"><span>Подписка 1 000 ₽/мес</span></a>
-                     <a class="tp-btn-pink mb-20" href="{% url 'faq' %}"><span>Частые вопросы</span></a>
+                     <a class="tp-btn-pink mb-20" href="#faq"><span>Частые вопросы</span></a>
                   </div>
                </div>
                <div class="col-xl-6 col-lg-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".9s">
@@ -36,7 +36,6 @@
       </div>
       <!-- tp-slider-area-end -->
 
-
       <!-- tp-about-area-start -->
       <div id="about-inner__area" class="about-inner__area pt-130 pb-130">
          <div class="container">
@@ -44,7 +43,7 @@
                <div class="col-lg-9 col-md-12">
                   <div class="about-inner__section-box mb-70 text-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
                      <span class="about-inner__subtitle">Предложение для вас</span>
-                     <h3 class="tp-section-title-md">Забери бесплатный период использования продукта</h3>
+                     <h3 class="tp-section-title-md">Забери бесплатную версия продукта</h3>
                   </div>
                </div>
             </div>
@@ -59,8 +58,8 @@
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6">
                            <div class="about-inner__content-item mb-10  d-flex align-items-center">
-                              <span>14</span>
-                              <p>Дней пробного периода</p>
+                              <span></span>
+                              <p>Бесплатная версия продукта</p>
                            </div>
                            <div class="about-inner__thumb-2 w-img mb-20">
                               <img src="{% static 'server/assets/img/about/ab-inner-2.png' %}" alt="">
@@ -73,7 +72,6 @@
                   <div class="about-inner__right">
                      <div class="about-inner__content">
                         <p>Продукт "чат-бот" предназначен для создания продающего контента, используя возможности Искусственного Интеллекта, он помогает в продвижении товаров и услуг, улучшая маркетинговые стратегии и взаимодействие с клиентами</p>
-                        <p>В бесплатный переиод входит использования минимального тарифа в течении 14 дней!</p>
                      </div>
                      <div class="about-inner__list">
                         <ul>
@@ -84,7 +82,7 @@
                         </ul>
                      </div>
                      <div class="about-inner__btn d-flex align-items-center">
-                        <a class="tp-btn-blue-square mr-20" href="#"><span>Попробовать бесплатно</span></a>
+                        <a class="tp-btn-blue-square mr-20" href="#"><span>Начать бесплатно</span></a>
                      </div>
                   </div>
                </div>
@@ -93,7 +91,7 @@
       </div>
 
       <!-- tp-testimonial-area-start -->
-      <div class="tp-testimonial__area grey-bg pt-110 pb-120 fix">
+      <div id="reviews" class="tp-testimonial__area grey-bg pt-110 pb-120 fix">
          <div class="container-fluid">
             <div class="row g-0">
                <div class="col-12">
@@ -146,7 +144,7 @@
                      </div>
                      <div class="tp-cta__item text-center">
                         <h3 class="tp-section-title text-white pb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">Приобрети ежемесячную подписку<br>прямо сейчас </h3>
-                        <a class="tp-btn-sky wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s" href="contact.html"><span>Начать пользоваться за 1 000 ₽</span></a>
+                        <a class="tp-btn-sky wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s" href="#"><span>Начать пользоваться за 1 000 ₽</span></a>
                      </div>
                   </div>
                </div>
@@ -156,7 +154,7 @@
       <!-- tp-cta-area-end -->
 
       <!-- tp-faq-area-start -->
-      <div class="tp-faq__area pt-120 pb-110">
+      <div id="faq" class="tp-faq__area pt-120 pb-110">
          <div class="container">
             <div class="row">
                <div class="col-xl-7 col-lg-6">
@@ -198,13 +196,68 @@
                      <div class="tp-faq__content">
                         <h4 class="tp-faq__faq-sm-title">Остались вопросы?</h4>
                         <p>Оставьте заявку на нашем сайте, мы ответим на ваше обращение в течении </p>
-                        <a class="w-100" href="{% url 'contact' %}">Заполнить заявку</a>
+                        <div class="tp-submit-button">
+                           <button type="button" class="tp-btn-sky wow tpfadeUp" data-bs-toggle="modal" data-bs-target="#questionModal">
+                              <span>Заполнить заявку</span>
+                           </button>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
+   <div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h5 class="modal-title" id="questionModalLabel">Оставьте заявку</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="tp-contact-input">
+                {{ form.name_user }}
+                {% if form.name_user.errors %}
+                  <div class="text-danger">{{ form.name_user.errors.0 }}</div>
+                {% endif %}
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="tp-contact-input">
+                {{ form.email }}
+                {% if form.email.errors %}
+                  <div class="text-danger">{{ form.email.errors.0 }}</div>
+                {% endif %}
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="tp-contact-input">
+                {{ form.ask }}
+                {% if form.ask.errors %}
+                  <div class="text-danger">{{ form.ask.errors.0 }}</div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="tp-submit-button">
+                <button type="submit" class=""><span>Отправить</span></button>
+              </div>
+            </div>
+          </div>
+        </form>
+        {% if success %}
+          <div class="alert alert-success mt-3">Ваше сообщение успешно отправлено!</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
       <!-- tp-faq-area-end -->
    </main>
 {% endblock %}
